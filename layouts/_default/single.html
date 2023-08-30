@@ -18,7 +18,8 @@
         </div>
       </div>
       <div style="margin-top: 1em;">
-        <span class="tag is-primary is-light">{{ .Params.Time }}</span>
+        <span class="tag is-primary is-light">Time: {{ .Params.Time }}</span>
+        <span class="tag is-primary is-light">Servings: {{ .Params.Servings }}</span>
         {{ range .Params.Tags }}
         <a class="tag" href="/tags/{{ . }}">{{ . }}</a>
         {{ end }}
